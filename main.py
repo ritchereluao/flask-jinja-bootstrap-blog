@@ -33,7 +33,7 @@ def send_email(name, email, phone, message):
                     f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:\n\t{message}"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
-        connection.login(user="EMAIL@gmail.com", password="EMAIL")
+        connection.login(user="EMAIL@gmail.com", password="PWD")
         connection.sendmail(from_addr="EMAIL@gmail.com", to_addrs="EMAIL@gmail.com", msg=email_message)
 
 
